@@ -1,0 +1,61 @@
+<div class="container">
+    <legend>Edit</legend>
+    <form>
+        <div class="mb-3">
+            <label for="accountHolder" class="form-label">Account Holder</label>
+            <input 
+             type="text" 
+             class="form-control" 
+             id="accountHolderId" 
+             aria-describedby="emailHelp" 
+             name="accountHolder"
+             [(ngModel)] = "transferEditForm.accountHolder"
+            />
+        </div>
+        <div class="mb-3">
+            <label for="iban" class="form-label">IBAN</label>
+            <input
+             type="text" 
+             class="form-control" 
+             id="ibanId" 
+             aria-describedby="emailHelp" 
+             name="iban"
+             [(ngModel)] = "transferEditForm.iban"
+            />
+        </div>
+        <div class="mb-3">
+            <label for="amount" class="form-label">Amount</label>
+            <input 
+             type="email" 
+             class="form-control" 
+             id="amountId" 
+             aria-describedby="emailHelp" 
+             name="amount"
+             [(ngModel)] = "transferEditForm.amount"
+            />
+        </div>
+        <div class="mb-3">
+            <label for="date" class="form-label">Date</label>
+            <input 
+             type="email" 
+             class="form-control" 
+             id="dateId" 
+             aria-describedby="emailHelp" 
+             name="date"
+             [(ngModel)] = "transferEditForm.date"
+            />
+        </div>
+        <div class="mb-3">
+            <label for="note" class="form-label">Note</label>
+            <input 
+             type="email" 
+             class="form-control" 
+             id="noteId" 
+             aria-describedby="emailHelp" 
+             name="note"
+             [(ngModel)] = "transferEditForm.note"
+            />
+        </div>
+        <button type="button" (click) = "update()" class="btn btn-primary">Submit</button>
+      </form>
+</div>

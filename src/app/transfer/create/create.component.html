@@ -1,0 +1,61 @@
+<div class="container">
+    <legend>Create</legend>
+    <form>
+        <div class="mb-3">
+            <label for="accountHolder" class="form-label">Account Holder</label>
+            <input 
+             type="text" 
+             class="form-control" 
+             id="accountHolderId" 
+             aria-describedby="emailHelp" 
+             name="accountHolder"
+             [(ngModel)] = "transferCreateForm.accountHolder"
+            />
+        </div>
+        <div class="mb-3">
+            <label for="iban" class="form-label">IBAN</label>
+            <input
+             type="text" 
+             class="form-control" 
+             id="ibanId" 
+             aria-describedby="emailHelp" 
+             name="iban"
+             [(ngModel)] = "transferCreateForm.iban"
+            />
+        </div>
+        <div class="mb-3">
+            <label for="amount" class="form-label">Amount</label>
+            <input 
+             type="email" 
+             class="form-control" 
+             id="amountId" 
+             aria-describedby="emailHelp" 
+             name="amount"
+             [(ngModel)] = "transferCreateForm.amount"
+            />
+        </div>
+        <div class="mb-3">
+            <label for="date" class="form-label">Date</label>
+            <input 
+             type="email" 
+             class="form-control" 
+             id="dateId" 
+             aria-describedby="emailHelp" 
+             name="date"
+             [(ngModel)] = "transferCreateForm.date"
+            />
+        </div>
+        <div class="mb-3">
+            <label for="note" class="form-label">Note</label>
+            <input 
+             type="email" 
+             class="form-control" 
+             id="noteId" 
+             aria-describedby="emailHelp" 
+             name="note"
+             [(ngModel)] = "transferCreateForm.note"
+            />
+        </div>
+        <button type="button" (click) = "create()" class="btn btn-primary">Submit</button>
+      </form>
+</div>
